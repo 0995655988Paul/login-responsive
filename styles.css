@@ -1,8 +1,6 @@
-/* Estilos generales */
 * { box-sizing: border-box; }
 body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #343849; background: #f7f7f7; }
 
-/* Dos columnas con Grid */
 .login { min-height: 100vh; min-height: 100svh; display: grid; grid-template-columns: 1fr 1fr; }
 .brand { display: grid; place-items: center; background: #0758dc; color: white; padding: 32px; }
 .brand h1 { margin: 0; font-size: clamp(28px, 3.4vw, 48px); letter-spacing: -1px; }
@@ -29,14 +27,12 @@ a:focus-visible, button:focus-visible { outline: 3px solid #84b2fc; outline-offs
 .signup { display: none; color: #90939c; font-size: 12px; text-align: center; }
 .signup a { font-weight: 600; }
 
-/* Tabletas */
 @media (max-width: 1024px) {
   .login { grid-template-columns: 42% 58%; }
   .form-panel { padding: 40px 28px; }
   .brand h1 { font-size: 30px; }
 }
 
-/* Móviles */
 @media (max-width: 600px) {
   .login { grid-template-columns: 1fr; }
   .brand { display: none; }
